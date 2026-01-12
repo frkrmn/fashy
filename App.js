@@ -6,20 +6,12 @@ import * as Font from 'expo-font';
 import { Inter_300Light, Inter_400Regular, Inter_500Medium, Inter_600SemiBold } from '@expo-google-fonts/inter';
 
 export default function App() {
-  const [fontsLoaded, setFontsLoaded] = useState(false);
-
-  useEffect(() => {
-    async function loadFonts() {
-      await Font.loadAsync({
-        'Inter-Light': Inter_300Light,
-        'Inter-Regular': Inter_400Regular,
-        'Inter-Medium': Inter_500Medium,
-        'Inter-SemiBold': Inter_600SemiBold,
-      });
-      setFontsLoaded(true);
-    }
-    loadFonts();
-  }, []);
+  const [fontsLoaded] = Font.useFonts({
+    'Inter-Light': Inter_300Light,
+    'Inter-Regular': Inter_400Regular,
+    'Inter-Medium': Inter_500Medium,
+    'Inter-SemiBold': Inter_600SemiBold,
+  });
 
   if (!fontsLoaded) {
     return (

@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, SafeAreaView, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, SafeAreaView } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import { Colors } from '../theme';
 import { Bell, Plus, Camera, ChevronRight } from 'lucide-react-native';
 import { SmallButton } from '../components/Common/Button';
@@ -9,7 +9,7 @@ import { BottomNav } from '../components/Common/BottomNav';
 export const HomeScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle="dark-content" />
+            <StatusBar style="dark" />
             <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scrollContent}>
 
                 {/* Header */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet, View } from 'react-native';
-import { Colors } from '../theme';
+import { Colors } from '../../theme';
 import { ArrowRight } from 'lucide-react-native';
 
 export const PrimaryButton = ({ title, onPress, icon }) => {

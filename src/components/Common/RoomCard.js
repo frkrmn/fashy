@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: 8,
         paddingVertical: 4,
         borderRadius: 8,
-        backdropFilter: 'blur(10px)', // Note: backdropFilter doesn't work in React Native without specialized libs, but we can use semi-transparent bg
+        // backdropFilter: 'blur(10px)', // Removed as it's not supported in React Native
     },
     badgeText: {
         color: Colors.white,

@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, SafeAreaView, Dimensions, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, SafeAreaView, Dimensions } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import { Colors } from '../theme';
 import { ChevronLeft, Share2, X, Heart, MessageCircle, Star, ExternalLink } from 'lucide-react-native';
 
@@ -8,7 +8,7 @@ const { width } = Dimensions.get('window');
 export const DecisionRoomScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" transparent backgroundColor="transparent" />
+            <StatusBar style="dark" />
 
             {/* Header Overlay */}
             <SafeAreaView style={styles.headerOverlay}>

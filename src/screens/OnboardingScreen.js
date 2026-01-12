@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, StyleSheet, Image, Dimensions, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import { Colors } from '../theme';
 import { PrimaryButton } from '../components/Common/Button';
 import { Sparkle, Heart } from 'lucide-react-native';
@@ -9,7 +9,7 @@ const { width } = Dimensions.get('window');
 export const OnboardingScreen = ({ navigation }) => {
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" />
+            <StatusBar style="dark" />
             <View style={styles.decorativeBlob} />
 
             <View style={styles.content}>
