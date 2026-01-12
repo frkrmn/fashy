@@ -1,369 +1,336 @@
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tightly | Intelligent Fashion</title>
+    <title>PickTogether - Social Shopping</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
+        /* Hide scrollbar for horizontal scrolling areas */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-up { animation: fadeUp 0.5s ease-out forwards; }
-        .delay-100 { animation-delay: 0.1s; }
-        .delay-200 { animation-delay: 0.2s; }
-        .delay-300 { animation-delay: 0.3s; }
-        .delay-500 { animation-delay: 0.5s; }
     </style>
-<link id="all-fonts-link-font-geist" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist">.font-geist { font-family: 'Geist', sans-serif !important; }</style><link id="all-fonts-link-font-roboto" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-roboto">.font-roboto { font-family: 'Roboto', sans-serif !important; }</style><link id="all-fonts-link-font-montserrat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-montserrat">.font-montserrat { font-family: 'Montserrat', sans-serif !important; }</style><link id="all-fonts-link-font-poppins" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-poppins">.font-poppins { font-family: 'Poppins', sans-serif !important; }</style><link id="all-fonts-link-font-playfair" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&amp;display=swap"><style id="all-fonts-style-font-playfair">.font-playfair { font-family: 'Playfair Display', serif !important; }</style><link id="all-fonts-link-font-instrument-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-instrument-serif">.font-instrument-serif { font-family: 'Instrument Serif', serif !important; }</style><link id="all-fonts-link-font-merriweather" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&amp;display=swap"><style id="all-fonts-style-font-merriweather">.font-merriweather { font-family: 'Merriweather', serif !important; }</style><link id="all-fonts-link-font-bricolage" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-bricolage">.font-bricolage { font-family: 'Bricolage Grotesque', sans-serif !important; }</style><link id="all-fonts-link-font-jakarta" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-jakarta">.font-jakarta { font-family: 'Plus Jakarta Sans', sans-serif !important; }</style><link id="all-fonts-link-font-manrope" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-manrope">.font-manrope { font-family: 'Manrope', sans-serif !important; }</style><link id="all-fonts-link-font-space-grotesk" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-space-grotesk">.font-space-grotesk { font-family: 'Space Grotesk', sans-serif !important; }</style><link id="all-fonts-link-font-work-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-work-sans">.font-work-sans { font-family: 'Work Sans', sans-serif !important; }</style><link id="all-fonts-link-font-pt-serif" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-pt-serif">.font-pt-serif { font-family: 'PT Serif', serif !important; }</style><link id="all-fonts-link-font-geist-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-geist-mono">.font-geist-mono { font-family: 'Geist Mono', monospace !important; }</style><link id="all-fonts-link-font-space-mono" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&amp;display=swap"><style id="all-fonts-style-font-space-mono">.font-space-mono { font-family: 'Space Mono', monospace !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style><link id="all-fonts-link-font-nunito" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-nunito">.font-nunito { font-family: 'Nunito', sans-serif !important; }</style><link id="all-fonts-link-font-newsreader" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400..800&amp;display=swap"><style id="all-fonts-style-font-newsreader">.font-newsreader { font-family: 'Newsreader', serif !important; }</style><link id="all-fonts-link-font-google-sans-flex" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-google-sans-flex">.font-google-sans-flex { font-family: 'Google Sans Flex', sans-serif !important; }</style><link id="all-fonts-link-font-oswald" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-oswald">.font-oswald { font-family: 'Oswald', sans-serif !important; }</style><link id="all-fonts-link-font-dm-sans" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-dm-sans">.font-dm-sans { font-family: 'DM Sans', sans-serif !important; }</style><link id="all-fonts-link-font-cormorant" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-cormorant">.font-cormorant { font-family: 'Cormorant Garamond', serif !important; }</style></head>
-<body class="bg-white text-zinc-900 antialiased selection:bg-zinc-100 selection:text-zinc-900 overflow-hidden">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased py-10 selection:bg-rose-100 selection:text-rose-900">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-40 border-b border-zinc-100">
-        <div class="max-w-[1600px] mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-8">
-                <a href="#" class="text-lg font-semibold tracking-tighter">FASHY</a>
-                <div class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-500">
-                    <a href="#" class="hover:text-zinc-900 transition-colors">New Arrivals</a>
-                    <a href="#" class="hover:text-zinc-900 transition-colors">Essentials</a>
-                    <a href="#" class="hover:text-zinc-900 transition-colors">Dresses</a>
-                    <a href="#" class="text-zinc-900 flex items-center gap-2">
-                        Circles 
-                        <span class="bg-blue-100 text-blue-600 text-[10px] px-1.5 py-0.5 rounded-full font-bold">2</span>
-                    </a>
+    <!-- Wrapper for presentation of multiple screens -->
+    <div class="flex flex-wrap justify-center gap-10 px-4">
+
+        <!-- SCREEN 1: ONBOARDING -->
+        <div class="w-full max-w-[375px] h-[812px] bg-white rounded-[40px] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] overflow-hidden relative flex flex-col border border-slate-100">
+            <!-- Status Bar Placeholder -->
+            <div class="h-14 w-full flex justify-between items-center px-6 pt-2 z-20 absolute top-0 left-0">
+                <span class="text-sm font-medium">9:41</span>
+                <div class="flex space-x-1.5 items-center">
+                    <div class="w-4 h-4 rounded-full bg-black/10 flex items-center justify-center"><i data-lucide="signal" class="w-3 h-3 text-black"></i></div>
+                    <div class="w-4 h-4 rounded-full bg-black/10 flex items-center justify-center"><i data-lucide="wifi" class="w-3 h-3 text-black"></i></div>
+                    <div class="w-5 h-3 rounded-sm border border-black/20 relative"><div class="absolute inset-0.5 bg-black rounded-[1px] w-3"></div></div>
                 </div>
             </div>
-            <div class="flex items-center gap-5">
-                <button class="text-zinc-400 hover:text-zinc-900 transition-colors">
-                    <iconify-icon icon="lucide:search" width="20" stroke-width="1.5"></iconify-icon>
-                </button>
-                <button class="text-zinc-400 hover:text-zinc-900 transition-colors relative">
-                    <iconify-icon icon="lucide:shopping-bag" width="20" stroke-width="1.5"></iconify-icon>
-                    <span class="absolute -top-1 -right-1 w-2 h-2 bg-zinc-900 rounded-full border border-white"></span>
-                </button>
-                <div class="w-8 h-8 rounded-full bg-zinc-100 overflow-hidden border border-zinc-200">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&amp;w=200&amp;auto=format&amp;fit=crop" alt="User" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+
+            <!-- Decorative Background Blob -->
+            <div class="absolute top-[-10%] left-[-20%] w-[300px] h-[300px] bg-rose-100/50 rounded-full blur-3xl z-0"></div>
+
+            <!-- Content -->
+            <div class="flex-1 relative z-10 flex flex-col pt-16 px-6">
+                <!-- Image Grid Composition -->
+                <div class="relative h-[440px] w-full">
+                    <!-- Main Image -->
+                    <div class="absolute left-0 top-4 w-[65%] h-[320px] bg-slate-100 rounded-[32px] overflow-hidden shadow-lg transform -rotate-2 z-10">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover opacity-90" alt="Fashion">
+                        <!-- Floating Reaction -->
+                        <div class="absolute bottom-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md">
+                            <i data-lucide="heart" class="w-5 h-5 text-rose-500 fill-rose-500"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- Secondary Image -->
+                    <div class="absolute right-0 top-0 w-[45%] h-[200px] bg-slate-100 rounded-[32px] overflow-hidden shadow-md transform rotate-3 z-0">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover opacity-90" alt="Style">
+                    </div>
+
+                    <!-- Tertiary Image -->
+                    <div class="absolute right-4 bottom-20 w-[40%] h-[160px] bg-slate-100 rounded-[32px] overflow-hidden shadow-md transform -rotate-1 z-20 border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1529139574466-a302c27e3844?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover opacity-90" alt="Friends">
+                        <!-- Chat Bubble -->
+                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-lg shadow-sm">
+                            <p class="text-[10px] font-medium text-slate-800">Love this! 😍</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative Star -->
+                    <i data-lucide="sparkle" class="absolute bottom-24 left-4 w-8 h-8 text-rose-400 fill-rose-100 z-30"></i>
+                </div>
+
+                <!-- Text Area -->
+                <div class="mt-auto mb-10">
+                    <h1 class="text-[40px] leading-[1.1] font-medium tracking-tight text-slate-900 mb-4">
+                        Shop better,<br>
+                        <span class="text-rose-500 italic font-normal">together.</span>
+                    </h1>
+                    <p class="text-lg text-slate-500 font-light leading-relaxed mb-8">
+                        Stop guessing. Invite friends to vote and chat about your finds before you buy.
+                    </p>
+
+                    <!-- Slider / Swipe Indicator -->
+                    <div class="flex space-x-2 mb-8">
+                        <div class="w-8 h-1.5 bg-slate-900 rounded-full"></div>
+                        <div class="w-1.5 h-1.5 bg-slate-200 rounded-full"></div>
+                        <div class="w-1.5 h-1.5 bg-slate-200 rounded-full"></div>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <button class="w-full bg-slate-900 text-white h-14 rounded-full flex items-center justify-between px-2 shadow-xl shadow-slate-200 hover:scale-[1.02] transition-transform duration-300">
+                        <span class="pl-6 font-medium text-lg">Get Started</span>
+                        <div class="h-10 w-10 bg-white rounded-full flex items-center justify-center">
+                            <i data-lucide="arrow-right" class="w-5 h-5 text-slate-900"></i>
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
-    </nav>
 
-    <main class="pt-16 h-screen flex relative overflow-hidden">
-        
-        <!-- Left Side: E-Commerce Content (Scrollable) -->
-        <div class="flex-1 lg:pr-[450px] overflow-y-auto h-full no-scrollbar">
-            <div class="lg:p-10 max-w-6xl mr-auto ml-auto pt-6 pr-6 pb-6 pl-6">
-                
-                <!-- Hero Section -->
-                <div class="mb-12 group cursor-pointer relative">
-                    <div class="relative w-full aspect-[21/9] bg-zinc-100 rounded-xl overflow-hidden mb-6">
-                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Hero">
-                        <div class="bg-gradient-to-t from-black/40 via-transparent to-transparent absolute inset-0"></div>
-                        <div class="absolute bottom-8 left-8 text-white">
-                            <span class="text-xs font-medium tracking-widest uppercase bg-white/20 backdrop-blur-sm px-2 py-1 rounded mb-3 inline-block">Collection</span>
-                            <h2 class="text-3xl font-medium tracking-tight">The Weekend Edit</h2>
-                            <p class="text-white/80 mt-2 font-light max-w-md text-sm">Curated pieces for your getaway to Napa Valley. Light linens and breathable silks.</p>
+
+        <!-- SCREEN 2: DASHBOARD (HOME) -->
+        <div class="w-full max-w-[375px] h-[812px] bg-slate-50 rounded-[40px] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] overflow-hidden relative flex flex-col border border-slate-100">
+             <!-- Status Bar -->
+             <div class="h-14 w-full flex justify-between items-center px-6 pt-2 z-20">
+                <span class="text-sm font-medium">9:42</span>
+                <div class="flex space-x-1.5 items-center opacity-40">
+                    <i data-lucide="signal" class="w-3 h-3 text-black"></i>
+                    <i data-lucide="wifi" class="w-3 h-3 text-black"></i>
+                    <div class="w-5 h-3 border border-black rounded-sm relative"><div class="absolute inset-0.5 bg-black rounded-[1px] w-3"></div></div>
+                </div>
+            </div>
+
+            <div class="flex-1 overflow-y-auto no-scrollbar pb-24">
+                <!-- Header -->
+                <div class="px-6 pt-2 pb-6 flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&amp;w=200&amp;auto=format&amp;fit=crop" class="w-10 h-10 rounded-full object-cover border border-slate-200" alt="Profile">
+                            <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-slate-50 rounded-full"></div>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500">Welcome back,</p>
+                            <h2 class="text-lg font-medium tracking-tight">Sarah Jenkins</h2>
                         </div>
                     </div>
+                    <button class="w-10 h-10 rounded-full bg-white border border-slate-100 flex items-center justify-center shadow-sm">
+                        <i data-lucide="bell" class="w-5 h-5 text-slate-600"></i>
+                    </button>
                 </div>
 
-                <!-- Section Header -->
-                <div class="flex items-center justify-between mb-6">
-                    <h1 class="text-lg font-semibold tracking-tight text-zinc-900">Trending for You</h1>
-                    <div class="flex gap-2">
-                        <button class="text-xs font-medium px-3 py-1.5 rounded-full bg-zinc-900 text-white">All</button>
-                        <button class="text-xs font-medium px-3 py-1.5 rounded-full bg-zinc-100 text-zinc-500 hover:bg-zinc-200 transition">Dresses</button>
-                        <button class="text-xs font-medium px-3 py-1.5 rounded-full bg-zinc-100 text-zinc-500 hover:bg-zinc-200 transition">Accessories</button>
-                    </div>
-                </div>
-
-                <!-- Product Grid -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10 pb-20">
-                    
-                    <!-- Product 1 -->
-                    <div class="group cursor-pointer">
-                        <div class="aspect-[3/4] bg-zinc-100 rounded-lg mb-3 relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&amp;w=800&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="Dress">
-                            <div class="absolute top-3 left-3 bg-white/90 backdrop-blur px-2 py-1 rounded text-[10px] font-semibold tracking-wide uppercase shadow-sm">Bestseller</div>
-                            <button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/90 backdrop-blur flex items-center justify-center text-zinc-400 hover:text-red-500 transition opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 duration-300">
-                                <iconify-icon icon="lucide:heart" width="14"></iconify-icon>
+                <!-- Create Room Banner -->
+                <div class="px-6 mb-8">
+                    <div class="w-full bg-slate-900 rounded-[28px] p-6 relative overflow-hidden flex flex-col justify-between h-[180px] shadow-lg shadow-slate-200">
+                        <div class="relative z-10 max-w-[70%]">
+                            <h3 class="text-white text-xl font-medium tracking-tight mb-2">Can't decide?</h3>
+                            <p class="text-slate-400 text-sm font-light leading-relaxed mb-4">Start a room, invite friends, and vote on your next look.</p>
+                            <button class="bg-white text-slate-900 px-5 py-2.5 rounded-full text-sm font-medium flex items-center gap-2">
+                                <i data-lucide="plus" class="w-4 h-4"></i>
+                                New Decision
                             </button>
                         </div>
-                        <div>
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-medium text-zinc-900 group-hover:underline decoration-zinc-300 underline-offset-4">Silk Charmeuse Slip</h3>
-                                <span class="text-xs font-semibold">$195</span>
-                            </div>
-                            <p class="text-xs text-zinc-500 mt-1">Pearl • 100% Silk</p>
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1605763240004-7e93b172d754?q=80&amp;w=300&amp;auto=format&amp;fit=crop" class="absolute -right-4 top-0 h-full w-[160px] object-cover object-left opacity-80 mix-blend-lighten" alt="Banner">
                     </div>
-
-                    <!-- Product 2 -->
-                    <div class="group cursor-pointer">
-                        <div class="aspect-[3/4] bg-zinc-100 rounded-lg mb-3 relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&amp;w=800&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="Blazer">
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-medium text-zinc-900 group-hover:underline decoration-zinc-300 underline-offset-4">Sculpted Blazer</h3>
-                                <span class="text-xs font-semibold">$245</span>
-                            </div>
-                            <p class="text-xs text-zinc-500 mt-1">Midnight • Wool Blend</p>
-                        </div>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="group cursor-pointer">
-                        <div class="aspect-[3/4] bg-zinc-100 rounded-lg mb-3 relative overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&amp;w=800&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="Pants">
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-medium text-zinc-900 group-hover:underline decoration-zinc-300 underline-offset-4">Pleated Wide Leg</h3>
-                                <span class="text-xs font-semibold">$168</span>
-                            </div>
-                            <p class="text-xs text-zinc-500 mt-1">Sand • Linen</p>
-                        </div>
-                    </div>
-                    
-                     <!-- Product 4 -->
-                    <div class="group cursor-pointer">
-                        <div class="aspect-[3/4] bg-zinc-100 rounded-lg mb-3 relative overflow-hidden">
-                             <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&amp;w=800&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="Jewelry">
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-medium text-zinc-900 group-hover:underline decoration-zinc-300 underline-offset-4">Modern Chain Link</h3>
-                                <span class="text-xs font-semibold">$120</span>
-                            </div>
-                            <p class="text-xs text-zinc-500 mt-1">Gold Vermeil • 18k</p>
-                        </div>
-                    </div>
-
-                     <!-- Product 5 -->
-                     <div class="group cursor-pointer">
-                        <div class="aspect-[3/4] bg-zinc-100 rounded-lg mb-3 relative overflow-hidden">
-                             <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&amp;w=800&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-105" alt="Dress 2">
-                        </div>
-                        <div>
-                            <div class="flex justify-between items-start">
-                                <h3 class="text-sm font-medium text-zinc-900 group-hover:underline decoration-zinc-300 underline-offset-4">Ribbed Midi Dress</h3>
-                                <span class="text-xs font-semibold">$148</span>
-                            </div>
-                            <p class="text-xs text-zinc-500 mt-1">Olive • Cotton Knit</p>
-                        </div>
-                    </div>
-
                 </div>
+
+                <!-- Active Decisions Section -->
+                <div class="px-6 mb-2 flex items-center justify-between">
+                    <h3 class="text-lg font-medium tracking-tight text-slate-900">Active Rooms</h3>
+                    <a href="#" class="text-xs text-rose-600 font-medium">See All</a>
+                </div>
+
+                <!-- Horizontal Scroll Rooms -->
+                <div class="flex overflow-x-auto no-scrollbar space-x-4 px-6 pb-8">
+                    <!-- Room Card 1 -->
+                    <div class="flex-none w-[220px] bg-white rounded-[24px] p-4 shadow-sm border border-slate-100">
+                        <div class="flex -space-x-2 mb-4">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&amp;h=100&amp;fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&amp;h=100&amp;fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+                            <div class="w-8 h-8 rounded-full bg-slate-100 border-2 border-white flex items-center justify-center text-[10px] text-slate-500 font-medium">+2</div>
+                        </div>
+                        <div class="h-[120px] rounded-2xl bg-slate-50 mb-3 overflow-hidden relative group">
+                            <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?q=80&amp;w=400&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                                <span class="bg-white/20 backdrop-blur-md text-white text-xs px-2 py-1 rounded-lg">3 items</span>
+                            </div>
+                        </div>
+                        <h4 class="font-medium text-slate-900 mb-1">Weekend Trip</h4>
+                        <p class="text-xs text-slate-400">Created 2h ago</p>
+                    </div>
+
+                    <!-- Room Card 2 -->
+                    <div class="flex-none w-[220px] bg-white rounded-[24px] p-4 shadow-sm border border-slate-100">
+                        <div class="flex -space-x-2 mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&amp;h=100&amp;fit=crop" class="w-8 h-8 rounded-full border-2 border-white">
+                            <div class="w-8 h-8 rounded-full bg-slate-100 border-2 border-white flex items-center justify-center text-[10px] text-slate-500 font-medium">+1</div>
+                        </div>
+                        <div class="h-[120px] rounded-2xl bg-slate-50 mb-3 overflow-hidden relative">
+                             <img src="https://images.unsplash.com/photo-1591369045357-96a29dfc297c?q=80&amp;w=400&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover">
+                              <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+                                <span class="bg-white/20 backdrop-blur-md text-white text-xs px-2 py-1 rounded-lg">2 items</span>
+                            </div>
+                        </div>
+                        <h4 class="font-medium text-slate-900 mb-1">Date Night Dress</h4>
+                        <p class="text-xs text-slate-400">Created 5h ago</p>
+                    </div>
+                </div>
+
+                <!-- Took & Share Prompt -->
+                <div class="px-6 mb-6">
+                    <h3 class="text-lg font-medium tracking-tight text-slate-900 mb-4">Took &amp; Share</h3>
+                    <div class="bg-violet-50 rounded-[28px] p-1 flex items-center pr-6">
+                        <div class="w-16 h-16 bg-white rounded-[24px] flex items-center justify-center shadow-sm mr-4">
+                            <i data-lucide="camera" class="w-6 h-6 text-violet-600"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h5 class="text-sm font-medium text-slate-900">In a store right now?</h5>
+                            <p class="text-xs text-slate-500 mt-0.5">Snap a photo and ask friends instantly.</p>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-slate-400"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Navigation -->
+            <div class="absolute bottom-0 w-full bg-white border-t border-slate-100 px-6 py-4 flex justify-between items-center z-30">
+                <button class="flex flex-col items-center gap-1 text-slate-900">
+                    <i data-lucide="home" class="w-6 h-6"></i>
+                    <span class="text-[10px] font-medium">Home</span>
+                </button>
+                <button class="flex flex-col items-center gap-1 text-slate-400 hover:text-rose-500 transition-colors">
+                    <i data-lucide="grid" class="w-6 h-6"></i>
+                    <span class="text-[10px] font-medium">Rooms</span>
+                </button>
+                <div class="w-12 h-12 bg-slate-900 rounded-full flex items-center justify-center -mt-8 shadow-lg shadow-slate-300 border-4 border-slate-50">
+                    <i data-lucide="scan-barcode" class="w-5 h-5 text-white"></i>
+                </div>
+                <button class="flex flex-col items-center gap-1 text-slate-400 hover:text-rose-500 transition-colors">
+                    <i data-lucide="message-square" class="w-6 h-6"></i>
+                    <span class="text-[10px] font-medium">Chat</span>
+                </button>
+                <button class="flex flex-col items-center gap-1 text-slate-400 hover:text-rose-500 transition-colors">
+                    <i data-lucide="user" class="w-6 h-6"></i>
+                    <span class="text-[10px] font-medium">Profile</span>
+                </button>
             </div>
         </div>
 
-        <!-- Right Side: The "OS" Chat Widget -->
-        <div class="fixed top-16 right-0 bottom-0 w-full md:w-[450px] border-l border-zinc-200 bg-white shadow-[0_0_50px_rgba(0,0,0,0.05)] z-30 flex flex-col">
-            
-            <!-- Chat Header -->
-            <div class="flex bg-white/80 h-14 z-10 border-zinc-100 border-b pr-5 pl-5 backdrop-blur items-center justify-between">
-                <div class="flex items-center gap-3">
-                    <div class="w-8 h-8 rounded-lg bg-zinc-900 text-white flex items-center justify-center flex-shrink-0">
-                        <iconify-icon icon="lucide:sparkles" width="16" class=""></iconify-icon>
-                    </div>
-                    <div class="">
-                        <div class="text-xs font-semibold tracking-tight">Fashy Assistant</div>
-                        <div class="text-[10px] text-zinc-400 font-medium">Active • Thinking</div>
-                    </div>
+
+        <!-- SCREEN 3: DECISION ROOM (VOTING/PRODUCT) -->
+        <div class="w-full max-w-[375px] h-[812px] bg-white rounded-[40px] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] overflow-hidden relative flex flex-col border border-slate-100">
+            <!-- Header Overlay -->
+            <div class="absolute top-0 w-full z-20 px-6 pt-12 pb-4 flex justify-between items-center bg-gradient-to-b from-white/80 to-transparent backdrop-blur-[2px]">
+                <button class="w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center border border-slate-100 shadow-sm">
+                    <i data-lucide="chevron-left" class="w-5 h-5 text-slate-700"></i>
+                </button>
+                <div class="flex flex-col items-center">
+                    <span class="text-xs font-medium text-slate-500 uppercase tracking-widest">Voting</span>
+                    <span class="text-sm font-semibold text-slate-900">Summer Trip</span>
                 </div>
-                <div class="flex items-center gap-1">
-                    <button class="p-2 text-zinc-400 hover:text-zinc-900 hover:bg-zinc-100 rounded-md transition-colors">
-                        <iconify-icon icon="lucide:more-horizontal" width="16"></iconify-icon>
-                    </button>
-                </div>
+                <button class="w-10 h-10 bg-white/80 backdrop-blur-md rounded-full flex items-center justify-center border border-slate-100 shadow-sm text-rose-500">
+                   <i data-lucide="share-2" class="w-5 h-5"></i>
+                </button>
             </div>
 
-            <!-- Chat Flow / Simulation -->
-            <div class="flex-1 overflow-y-auto p-5 space-y-6 bg-zinc-50/30 no-scrollbar pb-24">
-                
-                <div class="text-center text-[10px] text-zinc-300 font-medium uppercase tracking-widest my-4">Wednesday 10:42 AM</div>
-
-                <!-- 1. Context Setting -->
-                <div class="flex items-start gap-3 animate-fade-up">
-                    <div class="w-6 h-6 rounded bg-zinc-100 border border-zinc-200 text-zinc-900 flex items-center justify-center flex-shrink-0 text-[10px] font-bold">
-                        <iconify-icon icon="lucide:sparkles" width="12"></iconify-icon>
+            <div class="flex-1 overflow-y-auto no-scrollbar pb-28">
+                <!-- Product Showcase -->
+                <div class="w-full h-[460px] relative bg-slate-50 rounded-b-[40px] overflow-hidden mb-6">
+                    <img src="https://images.unsplash.com/photo-1550614000-4b9519e02a48?q=80&amp;w=800&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover" alt="Product">
+                    
+                    <!-- Navigation Arrows on Image -->
+                    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center space-x-4">
+                        <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg border border-slate-50 text-slate-400 hover:text-rose-500 transition">
+                            <i data-lucide="x" class="w-6 h-6"></i>
+                        </button>
+                        <button class="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center shadow-xl shadow-slate-900/20 text-white transform hover:scale-105 transition">
+                            <i data-lucide="heart" class="w-7 h-7 fill-white"></i>
+                        </button>
+                         <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg border border-slate-50 text-slate-400 hover:text-slate-900 transition">
+                            <i data-lucide="message-circle" class="w-6 h-6"></i>
+                        </button>
                     </div>
-                    <div class="space-y-2 max-w-[90%]">
-                        <div class="text-sm text-zinc-600 leading-relaxed">
-                            Based on your calendar, the <span class="font-semibold text-zinc-900">Napa Valley Girls Trip</span> is in 3 days. The forecast is sunny (26°C). I've set up a shared circle for you, Sarah, and Emily to vote on outfits.
-                        </div>
+
+                    <!-- Price Tag -->
+                    <div class="absolute top-24 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                        <span class="text-xs text-slate-500 line-through mr-2">$129.00</span>
+                        <span class="text-base font-semibold text-rose-600">$89.00</span>
                     </div>
                 </div>
 
-                <!-- 2. Complex Widget: Group Vote -->
-                <div class="animate-fade-up delay-100 pl-9">
-                    <div class="bg-white border border-zinc-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
-                        <!-- Widget Header -->
-                        <div class="bg-gradient-to-r from-blue-50/50 to-indigo-50/50 px-4 py-3 border-b border-zinc-100 flex items-center justify-between">
-                            <div class="flex items-center gap-2">
-                                <iconify-icon icon="lucide:wine" class="text-blue-500" width="14"></iconify-icon>
-                                <span class="text-xs font-semibold text-zinc-900">Napa Style Poll</span>
-                            </div>
-                            <div class="flex -space-x-1.5">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-5 h-5 rounded-full border border-white object-cover" title="Sarah">
-                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-5 h-5 rounded-full border border-white object-cover" title="Emily">
-                                <div class="w-5 h-5 rounded-full bg-zinc-900 text-white flex items-center justify-center text-[8px] font-bold border border-white">You</div>
-                            </div>
-                        </div>
-
-                        <!-- Voting List -->
-                        <div class="p-1 space-y-1">
-                            
-                            <!-- Option A: Winning -->
-                            <div class="relative group p-2 rounded-lg hover:bg-zinc-50 transition border border-transparent hover:border-zinc-100">
-                                <div class="absolute inset-y-0 left-0 bg-blue-50/50 w-[70%] rounded-lg transition-all duration-1000 origin-left scale-x-0 animate-[fadeUp_1s_0.5s_forwards]"></div>
-                                <div class="relative flex items-center justify-between z-10">
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-10 h-12 rounded bg-zinc-100 object-cover">
-                                        <div>
-                                            <p class="text-xs font-semibold text-zinc-900">Linen Midi Dress</p>
-                                            <div class="flex items-center gap-2 mt-0.5">
-                                                <span class="text-[10px] text-zinc-500">$148</span>
-                                                <div class="flex items-center gap-1">
-                                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-3 h-3 rounded-full">
-                                                    <div class="w-3 h-3 rounded-full bg-zinc-900 text-white flex items-center justify-center text-[6px]">Y</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-right">
-                                        <span class="text-xs font-bold text-blue-600">67%</span>
-                                        <p class="text-[9px] text-zinc-400">2 votes</p>
-                                    </div>
+                <!-- Product Info & Voting Stats -->
+                <div class="px-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <div class="flex items-center space-x-2 mb-1">
+                                <span class="bg-slate-100 text-slate-600 px-2 py-0.5 rounded text-[10px] font-semibold uppercase tracking-wide">Zara</span>
+                                <div class="flex items-center text-amber-400">
+                                    <i data-lucide="star" class="w-3 h-3 fill-current"></i>
+                                    <span class="text-xs font-medium text-slate-500 ml-1">4.8</span>
                                 </div>
                             </div>
-
-                            <!-- Option B: Losing -->
-                            <div class="relative group p-2 rounded-lg hover:bg-zinc-50 transition border border-transparent hover:border-zinc-100">
-                                <div class="absolute inset-y-0 left-0 bg-zinc-100/50 w-[33%] rounded-lg transition-all duration-1000 origin-left scale-x-0 animate-[fadeUp_1s_0.6s_forwards]"></div>
-                                <div class="relative flex items-center justify-between z-10">
-                                    <div class="flex items-center gap-3">
-                                        <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-10 h-12 rounded bg-zinc-100 object-cover">
-                                        <div>
-                                            <p class="text-xs font-medium text-zinc-900">Ribbed Knit</p>
-                                            <div class="flex items-center gap-2 mt-0.5">
-                                                <span class="text-[10px] text-zinc-500">$148</span>
-                                                <div class="flex items-center gap-1">
-                                                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-3 h-3 rounded-full grayscale opacity-70">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-right">
-                                        <span class="text-xs font-medium text-zinc-500">33%</span>
-                                        <button class="text-[9px] font-medium border border-zinc-200 bg-white px-2 py-0.5 rounded ml-1 hover:border-zinc-900 transition">Vote</button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="px-3 py-2 bg-zinc-50 border-t border-zinc-100 flex justify-between items-center">
-                            <span class="text-[10px] text-zinc-400">Poll ends in 4 hours</span>
-                            <button class="text-[10px] text-blue-600 font-medium hover:underline">View Discussion (4)</button>
+                            <h1 class="text-2xl font-medium tracking-tight text-slate-900">Oversized Linen Blazer</h1>
                         </div>
                     </div>
-                </div>
 
-                <!-- 3. User Response -->
-                <div class="flex justify-end animate-fade-up delay-200">
-                    <div class="bg-zinc-900 text-white text-sm px-4 py-2.5 rounded-2xl rounded-tr-sm max-w-[85%] shadow-sm">
-                        Looks like the linen dress is winning! Did Sarah say anything about the color?
-                    </div>
-                </div>
-
-                <!-- 4. Assistant Reply with Quote -->
-                <div class="flex items-start gap-3 animate-fade-up delay-300">
-                    <div class="w-6 h-6 rounded bg-zinc-100 border border-zinc-200 text-zinc-900 flex items-center justify-center flex-shrink-0 text-[10px] font-bold">
-                        <iconify-icon icon="lucide:sparkles" width="12"></iconify-icon>
-                    </div>
-                    <div class="space-y-3 max-w-[90%]">
-                        <div class="text-sm text-zinc-600">
-                            Yes, Sarah left a comment in the circle chat:
+                    <!-- Voting Progress -->
+                    <div class="mt-6 p-5 bg-slate-50 rounded-[24px] border border-slate-100">
+                        <div class="flex justify-between items-center mb-3">
+                            <h3 class="text-sm font-medium text-slate-900">Group Verdict</h3>
+                            <span class="text-xs font-semibold text-green-600 bg-green-50 px-2 py-1 rounded-md">Top Pick</span>
                         </div>
                         
-                        <!-- Quoted Message Bubble -->
-                        <div class="relative bg-white border border-zinc-200 rounded-xl p-3 shadow-sm">
-                            <div class="flex items-start gap-2 mb-2">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-5 h-5 rounded-full object-cover">
-                                <span class="text-xs font-semibold text-zinc-900">Sarah</span>
-                                <span class="text-[10px] text-zinc-400">10 mins ago</span>
-                            </div>
-                            <div class="text-xs text-zinc-600 italic border-l-2 border-zinc-200 pl-2">
-                                "I love the white one for the vineyard tour, but I'm worried about wine spills 🍷. Maybe we get the Sand color?"
-                            </div>
+                        <!-- Progress Bar -->
+                        <div class="relative w-full h-3 bg-slate-200 rounded-full mb-4 overflow-hidden">
+                            <div class="absolute top-0 left-0 h-full w-[75%] bg-rose-500 rounded-full"></div>
                         </div>
 
-                        <!-- Product Recommendation based on comment -->
-                        <div class="bg-white border border-zinc-200 p-3 rounded-xl shadow-sm flex gap-3 items-center group cursor-pointer hover:border-zinc-300 transition">
-                            <div class="relative w-12 h-12">
-                                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&amp;w=100&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover rounded bg-zinc-100">
-                                <div class="absolute -bottom-1 -right-1 w-4 h-4 bg-zinc-900 text-white rounded-full flex items-center justify-center text-[8px]">+</div>
+                        <!-- Voters Avatars -->
+                        <div class="flex justify-between items-center">
+                            <div class="flex -space-x-2">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&amp;h=100&amp;fit=crop" class="w-8 h-8 rounded-full border-2 border-white" title="Jessica voted Yes">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&amp;h=100&amp;fit=crop" class="w-8 h-8 rounded-full border-2 border-white" title="Mark voted Yes">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&amp;h=100&amp;fit=crop" class="w-8 h-8 rounded-full border-2 border-white opacity-50 grayscale" title="Sarah pending">
                             </div>
-                            <div class="flex-1">
-                                <p class="text-xs font-semibold text-zinc-900">Linen Midi - Sand</p>
-                                <p class="text-[10px] text-zinc-500">In Stock • Size S available</p>
-                            </div>
-                            <button class="bg-zinc-900 text-white text-[10px] font-medium px-3 py-1.5 rounded hover:bg-zinc-700">Switch Vote</button>
+                            <span class="text-xs text-slate-500 font-medium">3/4 voted</span>
                         </div>
                     </div>
-                </div>
 
-                <!-- 5. Typing Indicator -->
-                <div class="flex items-start gap-3 animate-fade-up delay-500">
-                    <div class="w-6 h-6 rounded bg-zinc-100 border border-zinc-200 text-zinc-900 flex items-center justify-center flex-shrink-0 text-[10px] font-bold">
-                        <iconify-icon icon="lucide:sparkles" width="12"></iconify-icon>
+                    <!-- Recent Chat Snippet -->
+                    <div class="mt-6 mb-4">
+                         <h3 class="text-sm font-medium text-slate-900 mb-3">Discussion</h3>
+                         <div class="flex items-start gap-3">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&amp;h=100&amp;fit=crop" class="w-8 h-8 rounded-full object-cover">
+                            <div class="bg-slate-50 p-3 rounded-2xl rounded-tl-none border border-slate-100">
+                                <p class="text-xs text-slate-600 leading-relaxed">The color matches your shoes perfectly! But is linen okay for evening?</p>
+                            </div>
+                         </div>
                     </div>
-                     <div class="bg-white border border-zinc-200 px-4 py-3 rounded-2xl rounded-tl-sm shadow-sm flex items-center gap-1 w-16">
-                         <div class="w-1.5 h-1.5 bg-zinc-400 rounded-full animate-bounce"></div>
-                         <div class="w-1.5 h-1.5 bg-zinc-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
-                         <div class="w-1.5 h-1.5 bg-zinc-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
-                     </div>
-                </div>
-
-            </div>
-
-            <!-- Chat Input Area -->
-            <div class="p-4 border-t border-zinc-100 bg-white z-20">
-                <div class="relative flex items-center">
-                    <button class="absolute left-3 text-zinc-400 hover:text-zinc-600 transition p-1 rounded-md hover:bg-zinc-100">
-                        <iconify-icon icon="lucide:paperclip" width="18"></iconify-icon>
-                    </button>
-                    <input type="text" placeholder="Reply to Sarah or ask Fashy..." class="w-full pl-10 pr-12 py-3 bg-zinc-50 border border-zinc-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-zinc-900 focus:border-zinc-900 transition-all placeholder-zinc-400 font-medium">
-                    <div class="absolute right-2 flex items-center gap-1">
-                        <button class="text-zinc-400 hover:text-zinc-900 p-1.5 rounded-lg hover:bg-zinc-200 transition-colors">
-                            <iconify-icon icon="lucide:mic" width="16"></iconify-icon>
-                        </button>
-                        <button class="text-white bg-zinc-900 p-1.5 rounded-lg hover:bg-zinc-700 transition-colors shadow-sm flex items-center justify-center">
-                            <iconify-icon icon="lucide:arrow-up" width="16"></iconify-icon>
-                        </button>
-                    </div>
-                </div>
-                <div class="flex justify-between mt-3 px-1">
-                     <div class="flex gap-4">
-                        <button class="text-[10px] hover:text-zinc-900 transition flex text-zinc-400 gap-x-1.5 gap-y-1.5 items-center">
-                            <iconify-icon icon="lucide:users" width="12"></iconify-icon> Napa Group
-                        </button>
-                        <button class="text-[10px] text-zinc-400 hover:text-zinc-900 transition flex items-center gap-1.5">
-                            <iconify-icon icon="lucide:history" width="12"></iconify-icon> History
-                        </button>
-                     </div>
-                     <span class="text-[10px] text-zinc-300">Powered by Tightly AI</span>
                 </div>
             </div>
 
+            <!-- Sticky Bottom Action -->
+            <div class="absolute bottom-0 w-full bg-white border-t border-slate-100 p-5 pb-8 z-30 flex gap-3">
+                <button class="flex-1 bg-white border border-slate-200 text-slate-900 font-medium h-12 rounded-full text-sm hover:bg-slate-50 transition">
+                    Compare
+                </button>
+                <button class="flex-[2] bg-slate-900 text-white font-medium h-12 rounded-full text-sm flex items-center justify-center gap-2 hover:bg-slate-800 transition shadow-lg shadow-slate-200">
+                    Buy on Brand Store
+                    <i data-lucide="external-link" class="w-4 h-4"></i>
+                </button>
+            </div>
         </div>
 
-    </main>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
 
 </body></html>
