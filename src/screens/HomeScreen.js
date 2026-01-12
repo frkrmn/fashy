@@ -97,9 +97,6 @@ export const HomeScreen = ({ navigation }) => {
                 </View>
 
             </ScrollView>
-            <BottomNav activeTab="home" onTabPress={(tab) => {
-                if (tab === 'rooms') navigation.navigate('DecisionRoom');
-            }} />
         </SafeAreaView>
     );
 };

@@ -73,7 +73,7 @@ export const OnboardingScreen = ({ navigation }) => {
 
                     <PrimaryButton
                         title="Get Started"
-                        onPress={() => navigation.navigate('Home')}
+                        onPress={() => navigation.navigate('Main')}
                     />
                 </View>
             </View>
